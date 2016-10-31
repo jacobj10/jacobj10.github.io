@@ -19,44 +19,34 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
               <a class="navbar-brand" href="#">Joshua Jacob</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#works">Sample Works</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fun Stuff <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">PwnMe</a></li>
+                    <li><a href="#">InjectMe</a></li>
+                    <li><a href="#">ScriptMe</a></li>
                     <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li class="dropdown-header">Cleaner Fun</li>
+                    <li><a href="#">Video that makes me happy</a></li>
+                    <li><a href="#">Hit me up</a></li>
                   </ul>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-
-      </div>
-    </div>
 
 
     <!-- Carousel
@@ -122,7 +112,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7" id="about">
           <h2 class="featurette-heading">Biography: <span class="text-muted">About me!</span></h2>          
           <p class="lead">My name is Joshua Jacob, and I am currently a student at Georgia Institute of Technology.</p>
           <p class="lead">I am studying Computer Science and plan to obtain a minor in Economics.</p>
@@ -143,7 +133,7 @@
         </div>
       </div>
 
-      <div class="row featurette">
+      <div class="row featurette" id="works">
 		  <center>
 			  <h2 class="featurette-heading">Sample Works: <span class="text-muted">See for yourself.</span></h2>
 			  <p class="lead">Here are some of projects, ranging from random ideas to professional tools.</p>
@@ -153,21 +143,21 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="../images/python.png" alt="Python placeholder image" width="140" height="140">
           <h2>SFTP Client</h2>
           <p style="font-size:150%">Created a Secure File Transfer Protocol Client to transfer files between remote and local filesystems. Used Paramiko to handle the SSH connection, and created a
           user friendly user interface using Gtk. This was built as a plugin for the KingPhisher toolkit.</p>
           <p><a class="btn btn-default" onclick="window.open('https://github.com/securestate/king-phisher-plugins/blob/master/client/sftp_client.py')" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="../images/python.png" alt="Python placeholder image" width="140" height="140">
           <h2>Compare Campaigns Tool</h2>
           <p style="font-size:150%">Created a tool packaged in the KingPhisher suite that generates graphs to compare multiple data points of phishing campaigns in a user friendly way.
           This allows the user to select and deselct which campaigns they would like to compare and dynamically generates the graphs in real time.</p>
           <p><a class="btn btn-default" onclick="window.open('https://github.com/securestate/king-phisher/blob/master/king_phisher/client/windows/compare_campaigns.py'); window.open('https://github.com/securestate/king-phisher/blob/master/king_phisher/client/graphs.py#L820-L935')" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="../images/python.png" alt="Python placeholder image" width="140" height="140">
           <h2>vPong</h2>
           <p style="font-size:150%">Created a vPython implementation of the classic Pong game. Implements realistic forces and interaction between surfaces and actively keeps score. 
           2 player control enabled and handled by a user input parsing engine that edits a dynamic environment with multiple objects.</p>
@@ -182,7 +172,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="resume">
 		  <center>
 			<h2 class="featurette-heading">Resume.</h2>
 			<object width="1000" height="750" type="application/pdf" data="/documents/jjacobResumeBU.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"></object>
@@ -190,24 +180,26 @@
 	  </div>
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="contact">
         <div class="col-md-7">
           <h2 class="featurette-heading">Contact: <span class="text-muted"> Joshua Jacob</span></h2>          
         </div>
         <div class="col-md-5">
 		  <p class="lead">I am always looking to get involved in various projects, compete in CTFs, or even just chat about tech. Feel free to contact me for any of the above
 		  and more! </p>
-		  <a href="https://www.linkedin.com/in/joshua-jacob-88a25a127"><img src="../images/linkedInLogo.png" /></a>
-		  <a href="mailto:jjacob36@gatech"><p class="lead">Send me an Email!</p></a>
+		  <div>
+			  <p class="lead"><a href="https://www.linkedin.com/in/joshua-jacob-88a25a127"><img src="../images/linkedInLogo.png" /></a>
+			  or
+			  <a href="mailto:jjacob36@gatech" style="color:inherit"> Send me an Email!</a></p>
+		  </div>
         </div>
-      </div>
+      </div>	
 
       <!-- /END THE FEATURETTES -->
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
