@@ -1,0 +1,22 @@
+title: Joshua Jacob
+email: hjjacob36@gatech.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome!
+baseurl: ""
+url: "jacobj10.github.io"
+twitter_username: josh_ljacob
+github_username:  jacobj10
+
+# Build settings
+markdown: kramdown
+#theme: minima
+gems:
+include: ['_pages']
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .bundle
+  - vendor
+collections:
+
