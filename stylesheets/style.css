@@ -1,10 +1,10 @@
 body {
-    background: #D3D3D3;
+    background: #696969;
     color: white;
 }
 
 
-/* Sidebar Thanks HTML5 UP for a lot of help :)*/
+/* Thanks HTML5 UP for a lot of help :)*/
 
     .artsy {
         height: auto; 
@@ -13,6 +13,17 @@ body {
         max-height: 150px;
         margin: 0 auto;
     }
+
+    .logo {
+        max-width: 100;
+        max-height: 100;
+        margin: 0 auto;
+    }
+
+    .logos {
+        padding-top: 2.5em;
+    }
+
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em;
 		background: black;
@@ -104,3 +115,13 @@ body {
 			#sidebar nav a:before {
 				background: white;
 			}
+
+
+    .section {
+        border: solid #000;
+        border-width: 5px 5px;
+        background: black;
+    }
+
+    .container-fluid {
+    }
