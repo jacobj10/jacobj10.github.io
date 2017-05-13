@@ -1,5 +1,5 @@
 body {
-    background: #696969;
+    background: black;
     color: white;
 }
 
@@ -116,12 +116,15 @@ body {
 				background: white;
 			}
 
-
-    .section {
-        border: solid #000;
-        border-width: 5px 5px;
-        background: black;
+    .section-content {
+        padding-left: 2.5em;
     }
 
-    .container-fluid {
+    .bigger {
+        font-size: 125%;
+    }
+    
+    .strip {
+        text-decoration: none;
+        color:white;
     }
