@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Joshua Jacob</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-</head>
-<html lang="en">
+---
+layout: home
+title: Joshua Jacob
+permalink: /
+---
     <body>
-        <section id="sidebar">
-            <h2 class="text-center">Joshua Jacob</h2>
-            <image class="artsy img-responsive img-circle" src="images/me.jpg"></image>
-            <h2 class="text-center"><span id="nouns"></span></h2>
-                <div class="noun" style="display:none"><h1>Developer</h1></div>
-                <div class="noun" style="display:none"><h1>Security Enthusiast</h1></div>
-                <div class="noun" style="display:none"><h1>LFC Fan</h1></div>
-                <div class="noun" style="display:none"><h1>Bug Bounty Hunter</h1></div>
 
-                <nav>
-                    <ul>
-                        <li><a href="#welcome">Welcome</a></li>
-                        <li><a href="#one">About</a></li>
-                        <li><a href="#two">Blog</a></li>
-                        <li><a href="#three">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="row logos">
-                    <a href="https://github.com/jacobj10"><img class="col-md-3 logo" src="images/gh.png"/></a>
-                    <a href="https://www.linkedin.com/in/joshua-jacob-88a25a127/"><img class="col-md-3 logo" src="images/linkedInLogo.png"/></a>
-                    <a href="https://hackerone.com/joshualaurencio"><img class="col-md-3 logo" src="images/hackerOne.jpg"/></a>
-                    <a href="https://keybase.io/jacobj10"><img class="col-md-3 logo" src="images/keybase.png"/></a>
-                </div>
-            </div>
-        </section>
         <div class="container">
             <div class="section col-md-12 col-md-offset-1" id="welcome">
                 <h1 class="section-head" >Welcome</h1>
@@ -128,12 +93,50 @@
                             </li>
                         </ul>
                     </table>
+                    <h2>The Other Things</h2>
+                    <h4>(the things that make me not a robot)</h4>
+                    <table>
+                        <ul class="bigger">
+                            <li>
+                                <span class="bigger">Soccer - I'm a huge Liverpool fan and I love to play #YNWA</span>
+
+                            </li>
+                            <li>
+                                <span class="bigger">Music - I play the piano and violin in my free time!</span>
+                            </li>
+                            <li>
+                                <span class="bigger">Video Games - Ehh. You can add me on <a href="http://steamcommunity.com/profiles/76561198055897316" style="text-decoration:none; color:gray;">steam</a>, I guess</span>
+                            </li>
+                        </ul>
+                    </table>
                 </div>
             </div>
 
         </div>
+        <div class="container">
+            <div class="section col-md-12 col-md-offset-1" id="blog">
+                <h1 class="section-head">Blog</h1>
+                <hr/>
 
-            
+                <div class="section-content">
+                    <h2>Blurbs about soccer, CS, and life I guess...</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section col-md-12 col-md-offset-1" id="contact">
+                <h1 class="section-head">Contact Me</h1>
+                <hr/>
+                <div class="section-content">
+                    <h2>Don't be afraid to reach out!</h2>
+                    <div class="row">
+                    <h3 class="col-md-3">School: jjacob36@gatech.edu</h3>
+                    <h3 class="col-md-4">Personal: joshualuarencio@gmail.com</h3>
+                    <h3 class="col-md-3">Fun: lolcopter@binkmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>            
 
     </body>
 
@@ -141,7 +144,6 @@
     <script>
         var cnt=0, texts=[];
 
-        // save the texts in an array for re-use
         $(".noun").each(function() {
           texts[cnt++]=$(this).text();
         });
@@ -157,7 +159,5 @@
         }      
         slide()   
     </script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</html>
