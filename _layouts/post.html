@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% include head.html %}
+
+<html lang="en">
+    {% include sidebar.html %}
+    
+    <div class="container">
+        <div class="section">
+            <h2 class="section-head"><span class="bigger">{{ page.title }}</span> - {{ page.date | date_to_string }}</h2>
+            <hr/>
+            <div class="section-content">
+            </div>
+        </div>
+        <br>
+            {{content}}
+    </div>
+
+</html>
+{% include footer.html %}

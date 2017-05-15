@@ -123,8 +123,22 @@ body {
     .bigger {
         font-size: 125%;
     }
+
+    .biggest {
+        font-size: 150%;
+    }
     
     .strip {
         text-decoration: none;
         color:white;
+    }
+
+    .blog-url {
+        color: white;
+        text-decoration: none;
+    }
+
+    .blog-url:hover {
+        color: gray;
+        text-decoration: none;
     }
