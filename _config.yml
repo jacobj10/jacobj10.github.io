@@ -18,5 +18,3 @@ exclude:
   - README.md
   - .bundle
   - vendor
-collections:
-
