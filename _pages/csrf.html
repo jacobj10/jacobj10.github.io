@@ -1,0 +1,64 @@
+---
+layout: home
+title: CSRF Template
+permalink: /csrf
+---
+<body>
+    <div class="container title-section">
+      <h2>
+        CSRF Aid
+      </h2>
+      <h4>
+      <div id="page-status">
+      </div>
+  
+      <br>
+      <h4>
+            An easy way to PoC GET request CSRF. Add the URL you would like to perform CSRF on as
+            a URL parameter with the key "url", and the page will send a "mode: no-cors", "credentials: include"
+            fetch and alert you when the request is complete. This will likely not be useful once Chrome same-site
+            business is enforced.
+
+      </h4>
+      <h5>
+            DISCLAIMER: This is meant to be used solely for research purposes. Any malicious use is not allowed.
+      </h5>
+      <h4>
+        I'm not a designer so there is no back button.
+      </h4>
+      </div>
+    <div class="container icons">
+      <span><a href='m&#97;&#105;&#108;to&#58;%6Aos&#104;u&#97;la&#37;&#55;5&#37;&#55;&#50;en%63&#105;%6F&#64;g%&#54;Da&#105;%6C%2&#69;c%6&#70;m'><i class="fa fa-envelope-o" aria-hidden="true"></i></a></span>
+      <span><a href="https://www.linkedin.com/in/joshua-jacob-88a25a127/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+      <span><a href="https://github.com/jacobj10"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+    </div>
+  </body>
+  <script>
+    const getUrlValue = () => {
+        const paramString = document.location.search.substring(1);
+        if (paramString.length == 0) return;
+        const paramList = paramString.split("&");
+        for (var i = 0; i < paramList.length; i++) {
+            const paramPair = paramList[i];
+            const keyValue = paramPair.split('=');
+            if (keyValue.length != 2 || keyValue[0].toLowerCase() !== "url") continue;
+            return decodeURIComponent(keyValue[1]);
+        }
+    }
+
+    window.onload = () => {
+        const targetUrl = getUrlValue();
+        if (!targetUrl) return;
+        const response = prompt(`Please confirm get request: ${targetUrl} (Type CONFIRM)`)
+        const dataSink = document.querySelector("#page-status");
+        if (response === "CONFIRM") {
+            fetch(targetUrl, {mode: 'no-cors', credentials: 'include'}).then((_) => {
+                dataSink.innerText = `Request for ${targetUrl} succeeded`;
+            }).catch((_) => {
+                dataSink.innerText = `Request for ${targetUrl} failed`;
+            })
+        } else {
+            dataSink.innerText = `Request for ${targetUrl} cancelled due to lack of consent`;
+        }
+    }
+  </script>
