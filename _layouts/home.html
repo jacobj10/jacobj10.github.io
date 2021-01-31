@@ -2,9 +2,8 @@
 <html lang="en">
     {% include head.html %}
     <body>
-      <!-- Use noscript version of Google Analytics because I am vain but woke. -->
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3J57ZB"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <!-- Hardcode page view GA, because I am vain -->
+      <img async src="https://www.google-analytics.com/g/collect?v=2&tid=G-K4487F4HRL&en=page_view" style="display:none;visibility:hidden"/>
       {{content}}
       <div class="container icons">
         <span><a href='m&#97;&#105;&#108;to&#58;%6Aos&#104;u&#97;la&#37;&#55;5&#37;&#55;&#50;en%63&#105;%6F&#64;g%&#54;Da&#105;%6C%2&#69;c%6&#70;m'><i class="fa fa-envelope-o" aria-hidden="true"></i></a></span>
@@ -13,7 +12,7 @@
       </div>
       <div class="container">
         <h5>
-          This website, sans <code>/csrf</code> is Javascript free. I am using the <code>noscript</code>
+          This website, sans <code>/csrf</code> is Javascript free. I am using a <code>noscript</code>
           version of Google analytics to see if anyone actually cares where I work (hint: no one does).
         </h5>
       </div>
