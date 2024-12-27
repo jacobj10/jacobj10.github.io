@@ -2,20 +2,26 @@
 <html lang="en">
     {% include head.html %}
     <body>
-      <!-- Hardcode page view GA, because I am vain -->
-      <img async src="https://www.google-analytics.com/g/collect?v=2&tid=G-K4487F4HRL&en=page_view" style="display:none;visibility:hidden"/>
-      {{content}}
-      <div class="container icons">
-        <span><a href='m&#97;&#105;&#108;to&#58;%6Aos&#104;u&#97;la&#37;&#55;5&#37;&#55;&#50;en%63&#105;%6F&#64;g%&#54;Da&#105;%6C%2&#69;c%6&#70;m'><i class="fa fa-envelope-o" aria-hidden="true"></i></a></span>
-        <span><a href="https://www.linkedin.com/in/joshua-jacob-88a25a127/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
-        <span><a href="https://github.com/jacobj10"><i class="fa fa-github" aria-hidden="true"></i></a></span>
-      </div>
-      <div class="container">
-        <h5>
-          This website, sans <code>/csrf</code> is Javascript free. I am using a <code>noscript</code>
-          version of Google analytics to see if anyone actually cares where I work (hint: no one does).
-        </h5>
-      </div>
+      <main class="container">
+        <!-- Hardcode page view GA, because I am vain -->
+        <img async src="https://www.google-analytics.com/g/collect?v=2&tid=G-K4487F4HRL&en=page_view" style="display:none;visibility:hidden"/>
+        <section class="title-section">
+            <div class="header-container">
+                <h2>Josh Jacob</h2>
+                <nav class="nav-links">
+                    <a href="/">work</a>
+                    <a href="/security">security</a>
+                    <a href="/about">about</a>
+                </nav>
+            </div>
+        </section>
+        {{content}}
+        <div class="container icons">
+          <span><a href='m&#97;&#105;&#108;to&#58;%6Aos&#104;u&#97;la&#37;&#55;5&#37;&#55;&#50;en%63&#105;%6F&#64;g%&#54;Da&#105;%6C%2&#69;c%6&#70;m'><i class="fa fa-envelope-o" aria-hidden="true"></i></a></span>
+          <span><a href="https://www.linkedin.com/in/joshua-jacob-88a25a127/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+          <span><a href="https://github.com/jacobj10"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+        </div>
+      </main>
     </body>
 
 </html>

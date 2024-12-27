@@ -1,20 +1,122 @@
+:root {
+    --primary-color: #2d3748;
+    --accent-color: #4299e1;
+    --background-color: #f7fafc;
+    --text-color: #1a202c;
+}
+
 body {
-    background: #EFE6DD;
-    color: #231F20;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 2rem 0;
 }
 
-.title-section {
-  margin-top: 3%;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-.icons > span > a {
-    font-size: 2em;
+h2 {
+    font-size: 3.0rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
-.icons > span {
-    margin-right: 1em;
+h3 {
+    font-size: 2.0rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+h4 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 1.0rem;
+    color: var(--text-color);
+    line-height: 1.8;
 }
 
 a {
-  color: #231F20;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #2b6cb0;
+}
+
+.title-section {
+    margin-bottom: 3rem;
+}
+
+.icons {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.icons span {
+    margin: 0 1rem;
+}
+
+.icons i {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    transition: color 0.2s ease;
+}
+
+.icons i:hover {
+    color: var(--accent-color);
+}
+
+code {
+    background-color: #edf2f7;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+}
+
+.section {
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 1rem 0;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: lowercase;
 }
