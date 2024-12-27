@@ -88,20 +88,6 @@ code {
     margin-bottom: 2.5rem;
 }
 
-@media (max-width: 640px) {
-    body {
-        padding: 1rem 0;
-    }
-
-    h2 {
-        font-size: 1.75rem;
-    }
-
-    h3 {
-        font-size: 1.1rem;
-    }
-}
-
 .header-container {
     display: flex;
     justify-content: space-between;
